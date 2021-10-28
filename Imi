@@ -1,0 +1,15 @@
+import pyttsx3
+
+name= {'Ира':19, 'Наташа':49,'Коля':68,'Настя':99,'Олег':42}
+sig= {'Ира':"Бонд", 'Наташа':"Корона",'Коля':"Мальборо",'Настя':"винстон",'Олег':"лд"}
+
+while True:
+    text= input('введите имя ')
+    engine = pyttsx3.init()
+    engine.say(name[text])
+    engine.runAndWait()
+    engine = pyttsx3.init()
+    engine.say(sig[text])
+    engine.runAndWait()
+    print('ввозраст',name[text],'лет','Любит больше всего',sig[text],)
+
